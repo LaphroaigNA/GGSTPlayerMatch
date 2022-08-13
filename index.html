@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head><meta charset="utf-8">
+    <title>GGSTプレマ募集</title>
+    <style>
+    body{
+        font-size: 20px;
+        text-align: center;
+    }
+        select{
+          width: 110px;
+          font-size: 20px;
+        }
+    .rating2{
+        width: 125px; 
+    }
+    .kyara{
+        width: 185px; 
+    }
+    .a{
+        line-height:50px
+    }
+ 
+    input:checked + label img {
+      border: 1px solid red;
+    }
+    .check{
+        display: inline-block;
+}
+.check img{
+    width: 100px;
+    height: 100px;
+}
+.check input {
+      display: none;
+    }
+.kyara{
+    text-align: center;
+}
+.rating1{
+    width: 30px;
+}
+    </style>
+</head>
+<header>
+    <h1>GGSTプレマ募集ジェネレーター</h1>
+</header>
+<body>
+<div class="a">
+    <label for="hard">ハード</label>
+    <select name="hard" class="hard">
+      <option value="X">指定なし</option>
+      <option value="PS">PS</option>
+      <option value="steam">steam</option>
+</select><br>
+    <label for="kyara">使用キャラクター</label>
+    <select name="kyara" class="kyara">
+    　<option value="SO">ソル</option>
+    　<option value="KY">カイ</option>
+    　<option value="MA">メイ</option>
+    　<option value="AX">アクセル</option>
+    　<option value="CH">チップ</option>
+    　<option value="PO">ポチョムキン</option>
+    　<option value="FA">ファウスト</option>
+    　<option value="MI">ミリア</option>
+    　<option value="ZA">ザトー</option>
+    　<option value="RA">ラムレザル</option>
+    　<option value="LE">レオ</option>
+    　<option value="NA">名残雪</option>
+    　<option value="GI">ジオヴァーナ</option>
+    　<option value="AN">闇慈</option>
+    　<option value="IN">イノ</option>
+    　<option value="GO">ゴールドルイス</option>
+    　<option value="JA">ジャック・オー</option>
+    　<option value="HA">ハッピーケイオス</option>
+    　<option value="BA">梅喧</option>
+    　<option value="TE">テスタメント</option>
+    　<option value="BR">ブリジット</option>
+</select><br>
+<label for="floor1">階層</label>
+<select name="floor1" class="floor1">
+    　<option value="tenjo">天上階</option>
+    　<option value="10f">10階</option>
+    　<option value="9f">9階</option>
+    　<option value="7f">7階</option>
+    　<option value="6f">6階↓</option>
+    </select>
+<label for="rating1">レート</label>
+<input  type="number" name="rating1" requiredminlength="1" maxlength="4" size="10"><br>
+<div class="cara">
+<p>募集キャラクター</p>
+    <div class="check">
+    <input type="checkbox" checked id="check-1" name="" value=""/>
+    <label for="check-1" class="label">
+    <img src="img/01_chibi_sol.png">
+    </label>
+    </div>
+    <div class="check">
+    <input type="checkbox" id="check-2" name="" value=""/>
+    <label for="check-2" class="label">
+    <img src="img/02_chibi_ky.png">
+    </label>
+    </div>
+    <div class="check">
+    <input type="checkbox" id="check-3" name="" value=""/>
+    <label for="check-3" class="label">
+    <img src="img/03_chibi_may.png">
+    </label>
+    </div>
+    <div class="check">
+    <input type="checkbox" id="check-4" name="" value=""/>
+    <label for="check-4" class="label">
+    <img src="img/04_chibi_axl.png">
+    </label>
+    </div>
+    <div class="check">
+    <input type="checkbox" id="check-5" name="" value=""/>
+    <label for="check-5" class="label">
+    <img src="img/05_chibi_chp.png">
+    </label>
+    </div><br>
+    <div class="check">
+    <input type="checkbox" id="check-6" name="" value=""/>
+    <label for="check-6" class="label">
+    <img src="img/06_chibi_pot.png">
+    </label>
+    </div>
+    <div class="check">
+    <input type="checkbox" id="check-7" name="" value=""/>
+    <label for="check-7" class="label">
+    <img src="img/07_chibi_fau.png">
+    </label>
+    </div>    
+    <div class="check">
+    <input type="checkbox" id="check-8" name="" value=""/>
+    <label for="check-8" class="label">
+    <img src="img/08_chibi_mll.png">
+    </label>
+    </div>   
+    <div class="check">
+    <input type="checkbox" id="check-9" name="" value=""/>
+    <label for="check-9" class="label">
+    <img src="img/09_chibi_zat.png">
+    </label>
+    </div>   
+    <div class="check">
+    <input type="checkbox" id="check-10" name="" value=""/>
+    <label for="check-10" class="label">
+    <img src="img/10_chibi_ram.png">
+    </label>
+    </div>
+    <br>
+    <div class="check">
+        <input type="checkbox" id="check-11" name="" value=""/>
+        <label for="check-11" class="label">
+        <img src="img/11_chibi_leo.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-12" name="" value=""/>
+        <label for="check-12" class="label">
+        <img src="img/12_chibi_nag_b.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-13" name="" value=""/>
+        <label for="check-13" class="label">
+        <img src="img/13_chibi_gio.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-14" name="" value=""/>
+        <label for="check-14" class="label">
+        <img src="img/14_chibi_anj.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-15" name="" value=""/>
+        <label for="check-15" class="label">
+        <img src="img/15_chibi_ino.png">
+        </label>
+        </div><br>
+        <div class="check">
+        <input type="checkbox" id="check-16" name="" value=""/>
+        <label for="check-16" class="label">
+        <img src="img/16_chibi_gld.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-17" name="" value=""/>
+        <label for="check-17" class="labe17">
+        <img src="img/17_chibi_jko_b.png">
+        </label>
+        </div>    
+        <div class="check">
+        <input type="checkbox" id="check-18" name="" value=""/>
+        <label for="check-18" class="label">
+        <img src="img/18_chibi_cos.png">
+        </label>
+        </div>   
+        <div class="check">
+        <input type="checkbox" id="check-19" name="" value=""/>
+        <label for="check-19" class="label">
+        <img src="img/19_chibi_bkn.png">
+        </label>
+        </div>
+        <div class="check">
+        <input type="checkbox" id="check-20" name="" value=""/>
+        <label for="check-20" class="label">
+        <img src="img/20_chibi_tst.png">
+        </label>
+        </div>
+        <br>
+        <div class="check">
+            <input type="checkbox" id="check-21" name="" value=""/>
+            <label for="check-21" class="label">
+            <img src="img/21_chibi_bgt.png">
+            </label>
+            </div>
+            </div>
+            <br>
+<label for="floor2">階層</label>
+<select name="floor2" class="floor2">
+　<option value="siteinasi">指定なし</option>
+　<option value="tenjo">天上階</option>
+　<option value="10f">10階</option>
+　<option value="9f">9階</option>
+　<option value="7f">7階</option>
+　<option value="6f">6階↓</option>
+</select>
+<label for="rating2">レート</label>
+<select name="rating2" class="rating2">
+　<option value="siteinasi">指定なし</option>
+　<option value="2000">2000↑</option>
+　<option value="1700">1800-1999</option>
+　<option value="1600">1600-1799</option>
+　<option value="1500">1400-1599</option>
+　<option value="1400">1400↓</option></select></div>
+    <p>ルール<br>
+        <input type="radio" name="q1" value="2先"> 2先
+        <input type="radio" name="q1" value="2先"> 3先
+        <input type="radio" name="q1" value="2先"> 5先
+        <input type="radio" name="q1" value="2先"> 10先<br>
+        <input type="radio" name="q2" value="1回"> 1回
+        <input type="radio" name="q2" value="2回"> 2回
+        <input type="radio" name="q2" value="3回"> 3回
+        <input type="radio" name="q2" value="2先"> 4回
+        <input type="radio" name="q2" value="2先"> 5回
+    </p>
+<div class="a">    
+<label for="name">部屋ID</label>
+<input type="text" id="name" name="name" requiredminlength="1" size="10"><br>
+<label for="name">コメント</label>
+<input type="text" id="name" name="name" requiredminlength="1" size="10" style="width:400px;height:21px;font-size:20px;"><br>
+</div> 
+</body>
+</html>
