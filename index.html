@@ -8,7 +8,7 @@
       minimum-scale=1.0,
       maximum-scale=2.0,
       user-scalable=yes" />
-    <title>GGSTプレマ募集ジェネレーター</title>
+    <title>GGSTプレマ募集</title>
     <style>
     body{
         font-size: 20px;
@@ -48,7 +48,13 @@
     display: inline-block;
 }
 .b{
-    display:inline-block
+    background-color: lightblue;
+    width: 500px;
+    margin: 0 auto;
+    text-align:center;
+}
+.b2{
+    text-align: left;
 }
 .ito{
     text-align: center;
@@ -64,13 +70,14 @@
     <form name="form1">
     <label for="hard">ハード</label>
     <select name="hard" onchange="clickBtn2()">
-      <option value="指定なし">指定なし</option>
+      <option disabled selected>select</option>
       <option value="PS">PS</option>
       <option value="Steam">Steam</option>
 </select><br></form>
 <form name="form2">
     <label for="chara1">使用キャラクター</label>
     <select name="chara1" class="chara1" onchange="clickBtn3()">
+    　<option disabled selected>select</option>
     　<option value="ソル">ソル</option>
     　<option value="カイ">カイ</option>
     　<option value="メイ">メイ</option>
@@ -106,6 +113,7 @@
     </select>
 <label for="rating1">レート</label>
 <select name="rating1" class="rating1" onchange="clickBtn5()">
+    　<option disabled selected>select</option>
 　　　<option value="2300↑">2300↑</option>
 　　　<option value="2250">2250</option>
 　　　<option value="2200">2200</option>
@@ -264,6 +272,7 @@
 <form name="form4">
 <label for="floor2">階層</label>
 <select name="floor2" class="floor2" onclick="clickBtn6()">
+    <option disabled selected>select</option>
 　<option value="指定なし">指定なし</option>
 　<option value="天上階">天上階</option>
 　<option value="10F">10階</option>
@@ -273,6 +282,7 @@
 </select>
 <label for="rating2">レート</label>
 <select name="rating2" class="rating2" onclick="clickBtn7()">
+    <option disabled selected>select</option>
 　<option value="指定なし">指定なし</option>
 　<option value="2000↑">2000↑</option>
 　<option value="1800-1999">1800-1999</option>
@@ -297,20 +307,24 @@
 <form name="form6">
     <label for="ito">募集目的</label>
     <select name="ito" onclick="clickBtn11()" class="ito">
-    　<option value="指定なし">ガチ対戦</option>
-    　<option value="天上階">カジュアル</option>
-    　<option value="10F">フレンド作り</option>
-    　<option value="9F">サブキャラ練習</option>
+        <option disabled selected>select</option>
+    　<option value="ガチ対戦">ガチ対戦</option>
+    　<option value="カジュアル">カジュアル</option>
+    　<option value="フレンド作り">フレンド作り</option>
+    　<option value="サブキャラ練習">サブキャラ練習</option>
     </select></form>
 </div>
-<span class="b">
+<div class="b">
+<span class="b2">
 <p>【プラットフォーム】<span id="hardid"></span></p>
 <p>【使用キャラ】<span id="chara1id"></span></p>
 <p>【階層】<span id="floor1id" class="no-wrap"></span>【レート】<span id="rating1id" class="no-wrap"></span></p>
 <p>【募集キャラ】<span id="chara2id"></span></p>
 <p>【階層】<span id="floor2id" class="no-wrap"></span>【レート】<span id="rating2id" class="no-wrap"></span></p>
 <p>【ルール】<span id="nansakiid" class="no-wrap"></span>【回数】<span id="nankaiid" class="no-wrap"></span></p>
-<p>【募集目的】<span id="itoid"></span></p>
+<p>【募集目的】<span id="itoid">
+</span>    
+</div></p>
 </span>
 <script>
 function clickBtn1() {
