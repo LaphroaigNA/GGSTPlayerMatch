@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head><meta charset="utf-8">
-    <title>GGSTプレマ募集</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <title>GGSTプレマ募集</title>
+  <style>
     body{
         font-size: 20px;
         text-align: center;
@@ -52,25 +53,33 @@
 .ito{
     text-align: center;
 }
-    </style>
+#text-button {
+  display: block;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+  border: 1px solid #232323;
+}
+.go{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+  </style>
 </head>
 <div class="j">
-<header>
+  <header>
     <h1>GGSTプレマ募集ジェネレーター</h1>
-</header>
-<body>
-<div class="a">
-    <form name="form1">
-    <label for="hard">ハード</label>
-    <select name="hard" onchange="clickBtn2()">
-      <option disabled selected>select</option>
+  </header>
+  <body>
+    <div class="a">
+      <form name="form1"> <label for="hard">ハード</label> <select name="hard" onchange="clickBtn2()">
+      <option disabled selected value="">select</option>
       <option value="PS">PS</option>
       <option value="Steam">Steam</option>
 </select><br></form>
-<form name="form2">
-    <label for="chara1">使用キャラクター</label>
-    <select name="chara1" class="chara1" onchange="clickBtn3()">
-    　<option disabled selected>select</option>
+      <form name="form2"> <label for="chara1">使用キャラクター</label> <select name="chara1" class="chara1" onchange="clickBtn3()">
+    　<option disabled selected value="" checked>select</option>
     　<option value="ソル">ソル</option>
     　<option value="カイ">カイ</option>
     　<option value="メイ">メイ</option>
@@ -93,9 +102,8 @@
     　<option value="テスタメント">テスタメント</option>
     　<option value="ブリジット">ブリジット</option>
 </select><br></form>
-<form name="form3">
-<label for="floor1">階層</label>
-<select name="floor1" class="floor1" onchange="clickBtn4()">
+      <form name="form3"> <label for="floor1">階層</label> <select name="floor1" class="floor1" onchange="clickBtn4()">
+    <option disabled selected che value="">select</option>
     　<option value="天上階">天上階</option>
     　<option value="10F">10階</option>
     　<option value="9F">9階</option>
@@ -103,10 +111,8 @@
     　<option value="6F">6階</option>
     <option value="5F">5階</option>
     <option value="4F↓">4階↓</option>
-    </select>
-<label for="rating1">レート</label>
-<select name="rating1" class="rating1" onchange="clickBtn5()">
-    　<option disabled selected>select</option>
+    </select> <label for="rating1">レート</label> <select name="rating1" class="rating1" onchange="clickBtn5()">
+    　<option disabled selected value="" checked>select</option>
 　　　<option value="2300↑">2300↑</option>
 　　　<option value="2250">2250</option>
 　　　<option value="2200">2200</option>
@@ -130,278 +136,210 @@
 　　　<option value="1250">1250</option>
 　　　<option value="1200↓">1200↓</option>
 </select><br></form>
-<div class="cara">
-<p><b>募集キャラクター</b></p>
-    <div class="check">
-    <input type="checkbox" id="check-1" name="chara2" value="ソル" onclick="clickBtn1()"/>
-    <label for="check-1" class="label">
+      <div class="cara">
+        <p><b>募集キャラクター</b></p>
+        <div class="check"> <input type="checkbox" id="check-1" name="chara2" value="ソル" onclick="clickBtn1()" /> <label for="check-1" class="label">
     <img src="img/01_chibi_sol.png">
-    </label>
-    </div>
-    <div class="check">
-    <input type="checkbox" id="check-2" name="chara2" value="カイ" onclick="clickBtn1()"/>
-    <label for="check-2" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-2" name="chara2" value="カイ" onclick="clickBtn1()" /> <label for="check-2" class="label">
     <img src="img/02_chibi_ky.png">
-    </label>
-    </div>
-    <div class="check">
-    <input type="checkbox" id="check-3" name="chara2" value="メイ" onclick="clickBtn1()"/>
-    <label for="check-3" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-3" name="chara2" value="メイ" onclick="clickBtn1()" /> <label for="check-3" class="label">
     <img src="img/03_chibi_may.png">
-    </label>
-    </div>
-    <div class="check">
-    <input type="checkbox" id="check-4" name="chara2" value="アクセル" onclick="clickBtn1()"/>
-    <label for="check-4" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-4" name="chara2" value="アクセル" onclick="clickBtn1()" /> <label for="check-4" class="label">
     <img src="img/04_chibi_axl.png">
-    </label>
-    </div>
-    <div class="check">
-    <input type="checkbox" id="check-5" name="chara2" value="チップ" onclick="clickBtn1()"/>
-    <label for="check-5" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-5" name="chara2" value="チップ" onclick="clickBtn1()" /> <label for="check-5" class="label">
     <img src="img/05_chibi_chp.png">
-    </label>
-    </div><br>
-    <div class="check">
-    <input type="checkbox" id="check-6" name="chara2" value="ポチョムキン" onclick="clickBtn1()"/>
-    <label for="check-6" class="label">
+    </label> </div><br>
+        <div class="check"> <input type="checkbox" id="check-6" name="chara2" value="ポチョムキン" onclick="clickBtn1()" /> <label for="check-6" class="label">
     <img src="img/06_chibi_pot.png">
-    </label>
-    </div>
-    <div class="check">
-    <input type="checkbox" id="check-7" name="chara2" value="ファウスト" onclick="clickBtn1()"/>
-    <label for="check-7" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-7" name="chara2" value="ファウスト" onclick="clickBtn1()" /> <label for="check-7" class="label">
     <img src="img/07_chibi_fau.png">
-    </label>
-    </div>    
-    <div class="check">
-    <input type="checkbox" id="check-8" name="chara2" value="ミリア" onclick="clickBtn1()"/>
-    <label for="check-8" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-8" name="chara2" value="ミリア" onclick="clickBtn1()" /> <label for="check-8" class="label">
     <img src="img/08_chibi_mll.png">
-    </label>
-    </div>   
-    <div class="check">
-    <input type="checkbox" id="check-9" name="chara2" value="ザトー" onclick="clickBtn1()"/>
-    <label for="check-9" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-9" name="chara2" value="ザトー" onclick="clickBtn1()" /> <label for="check-9" class="label">
     <img src="img/09_chibi_zat.png">
-    </label>
-    </div>   
-    <div class="check">
-    <input type="checkbox" id="check-10" name="chara2" value="ラムレザル" onclick="clickBtn1()"/>
-    <label for="check-10" class="label">
+    </label> </div>
+        <div class="check"> <input type="checkbox" id="check-10" name="chara2" value="ラムレザル" onclick="clickBtn1()" /> <label for="check-10" class="label">
     <img src="img/10_chibi_ram.png">
-    </label>
-    </div>
-    <br>
-    <div class="check">
-        <input type="checkbox" id="check-11" name="chara2" value="レオ" onclick="clickBtn1()"/>
-        <label for="check-11" class="label">
+    </label> </div> <br>
+        <div class="check"> <input type="checkbox" id="check-11" name="chara2" value="レオ" onclick="clickBtn1()" /> <label for="check-11" class="label">
         <img src="img/11_chibi_leo.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-12" name="chara2" value="名残雪" onclick="clickBtn1()"/>
-        <label for="check-12" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-12" name="chara2" value="名残雪" onclick="clickBtn1()" /> <label for="check-12" class="label">
         <img src="img/12_chibi_nag_b.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-13" name="chara2" value="ジオヴァーナ" onclick="clickBtn1()"/>
-        <label for="check-13" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-13" name="chara2" value="ジオヴァーナ" onclick="clickBtn1()" /> <label for="check-13" class="label">
         <img src="img/13_chibi_gio.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-14" name="chara2" value="闇慈" onclick="clickBtn1()"/>
-        <label for="check-14" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-14" name="chara2" value="闇慈" onclick="clickBtn1()" /> <label for="check-14" class="label">
         <img src="img/14_chibi_anj.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-15" name="chara2" value="イノ" onclick="clickBtn1()"/>
-        <label for="check-15" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-15" name="chara2" value="イノ" onclick="clickBtn1()" /> <label for="check-15" class="label">
         <img src="img/15_chibi_ino.png">
-        </label>
-        </div><br>
-        <div class="check">
-        <input type="checkbox" id="check-16" name="chara2" value="ゴールドルイス"/>
-        <label for="check-16" class="label">
+        </label> </div><br>
+        <div class="check"> <input type="checkbox" id="check-16" name="chara2" value="ゴールドルイス" /> <label for="check-16" class="label">
         <img src="img/16_chibi_gld.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-17" name="chara2" value="ジャック・オー" onclick="clickBtn1()"/>
-        <label for="check-17" class="labe17">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-17" name="chara2" value="ジャック・オー" onclick="clickBtn1()" /> <label for="check-17" class="labe17">
         <img src="img/17_chibi_jko_b.png">
-        </label>
-        </div>    
-        <div class="check">
-        <input type="checkbox" id="check-18" name="chara2" value="ハッピーケイオス" onclick="clickBtn1()"/>
-        <label for="check-18" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-18" name="chara2" value="ハッピーケイオス" onclick="clickBtn1()" /> <label for="check-18" class="label">
         <img src="img/18_chibi_cos.png">
-        </label>
-        </div>   
-        <div class="check">
-        <input type="checkbox" id="check-19" name="chara2" value="梅喧" onclick="clickBtn1()"/>
-        <label for="check-19" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-19" name="chara2" value="梅喧" onclick="clickBtn1()" /> <label for="check-19" class="label">
         <img src="img/19_chibi_bkn.png">
-        </label>
-        </div>
-        <div class="check">
-        <input type="checkbox" id="check-20" name="chara2" value="テスタメント" onclick="clickBtn1()"/>
-        <label for="check-20" class="label">
+        </label> </div>
+        <div class="check"> <input type="checkbox" id="check-20" name="chara2" value="テスタメント" onclick="clickBtn1()" /> <label for="check-20" class="label">
         <img src="img/20_chibi_tst.png">
-        </label>
-        </div>
-        <br>
-        <div class="check">
-            <input type="checkbox" id="check-21" name="chara2" value="ブリジット" onclick="clickBtn1()"/>
-            <label for="check-21" class="label">
+        </label> </div> <br>
+        <div class="check"> <input type="checkbox" id="check-21" name="chara2" value="ブリジット" onclick="clickBtn1()" /> <label for="check-21" class="label">
             <img src="img/21_chibi_bgt.png">
-            </label>
-            </div>
-            </div>
-            <br>
-<form name="form4">
-<label for="floor2">階層</label>
-<select name="floor2" class="floor2" onclick="clickBtn6()">
-    <option disabled selected>select</option>
+            </label> </div>
+        <div class="check"> <input type="checkbox" id="check-22" name="chara2" value="指定なし" onclick="clickBtn1()" /> <label for="check-22" class="label">
+                <img src="kurai/1so.png">
+                </label> </div>
+      </div> <br>
+      <form name="form4"> <label for="floor2">階層</label> <select name="floor2" class="floor2" onclick="clickBtn6()">
+    <option disabled selected value="">select</option>
 　<option value="指定なし">指定なし</option>
 　<option value="天上階">天上階</option>
 　<option value="10F">10階</option>
 　<option value="9F">9階</option>
 　<option value="7F">7階</option>
 　<option value="6F↓">6階↓</option>
-</select>
-<label for="rating2">レート</label>
-<select name="rating2" class="rating2" onclick="clickBtn7()">
-    <option disabled selected>select</option>
+</select> <label for="rating2">レート</label> <select name="rating2" class="rating2" onclick="clickBtn7()">
+    <option disabled selected value="">select</option>
 　<option value="指定なし">指定なし</option>
 　<option value="2000↑">2000↑</option>
 　<option value="1800-1999">1800-1999</option>
 　<option value="1600-1799">1600-1799</option>
 　<option value="1400-1599">1400-1599</option>
-　<option value="1400↓">1400↓</option></select></form></div>
+　<option value="1400↓">1400↓</option></select></form>
+    </div>
     <p>ルール<br>
-        <form name="form5">
-        <input type="radio" name="q1" value="2先" onclick="clickBtn8()"> 2先
-        <input type="radio" name="q1" value="3先" onclick="clickBtn8()"> 3先
-        <input type="radio" name="q1" value="5先" onclick="clickBtn8()"> 5先
-        <input type="radio" name="q1" value="10先" onclick="clickBtn8()"> 10先<br>
-        <input type="radio" name="q2" value="1回" onclick="clickBtn9()"> 1回
-        <input type="radio" name="q2" value="2回" onclick="clickBtn9()"> 2回
-        <input type="radio" name="q2" value="3回" onclick="clickBtn9()"> 3回
-        <input type="radio" name="q2" value="4回" onclick="clickBtn9()"> 4回
-        <input type="radio" name="q2" value="5回" onclick="clickBtn9()"> 5回
-    </p></form>
-<div class="a">    
-<label for="name">部屋ID</label>
-<input type="text" id="name" name="name" requiredminlength="1" size="10"><br>
-<form name="form6">
-    <label for="ito">募集目的</label>
-    <select name="ito" onclick="clickBtn11()" class="ito">
-        <option disabled selected>select</option>
-    　<option value="ガチ対戦">ガチ対戦</option>
-    　<option value="カジュアル">カジュアル</option>
-    　<option value="フレンド作り">フレンド作り</option>
-    　<option value="サブキャラ練習">サブキャラ練習</option>
+      <form name="form5"> <input type="radio" name="q1" value="2先" onclick="clickBtn8()"> 2先 <input type="radio" name="q1" value="3先" onclick="clickBtn8()"> 3先 <input type="radio" name="q1" value="5先" onclick="clickBtn8()"> 5先 <input type="radio" name="q1" value="10先" onclick="clickBtn8()"> 10先<br> <input type="radio" name="q2" value="1回" onclick="clickBtn9()"> 1回 <input type="radio" name="q2" value="2回" onclick="clickBtn9()"> 2回 <input type="radio" name="q2" value="3回" onclick="clickBtn9()"> 3回 <input type="radio" name="q2" value="4回" onclick="clickBtn9()"> 4回 <input type="radio" name="q2" value="5回" onclick="clickBtn9()"> 5回 </p>
+    </form>
+    <div class="a"> <label for="home">部屋ID</label> <input type="text" id="home" name="home" requiredminlength="1" size="10" onchange="clickBtn10()"><br>
+      <form name="form6"> <label for="ito">募集目的</label> <select name="ito" onclick="clickBtn11()" class="ito">
+      <option disabled selected value="">select</option>
+    <option value="ガチ対戦">ガチ対戦</option>
+    <option value="カジュアル">カジュアル</option>
+    <option value="フレンド作り">フレンド作り</option>
+    <option value="サブキャラ練習">サブキャラ練習</option>
     </select></form>
-</div>
-<div class="b">
-<span class="b2">
-<p>【プラットフォーム】<span id="hardid"></span></p>
-<p>【使用キャラ】<span id="chara1id"></span></p>
-<p>【階層】<span id="floor1id" class="no-wrap"></span>【レート】<span id="rating1id" class="no-wrap"></span></p>
-<p>【募集キャラ】<span id="chara2id"></span></p>
-<p>【階層】<span id="floor2id" class="no-wrap"></span>【レート】<span id="rating2id" class="no-wrap"></span></p>
-<p>【ルール】<span id="nansakiid" class="no-wrap"></span>【回数】<span id="nankaiid" class="no-wrap"></span></p>
-<p>【募集目的】<span id="itoid">
-</span>    
-</div></p>
-</span>
-<script>
-function clickBtn1() {
-const arr = [];
-const chara2 = document.getElementsByName("chara2");
-for (let i = 0; i < chara2.length; i++) {
-if (chara2[i].checked) 
-{
-arr.push(chara2[i].value);
-}
-}
-document.getElementById("chara2id").textContent = arr;
-}
-</script>
-<script>
-function clickBtn2(){
-const hard = document.form1.hard;
-const num = hard.selectedIndex;
-const str = hard.options[num].value;
-document.getElementById("hardid").textContent = str; 
-}
-function clickBtn3(){
-const chara1 = document.form2.chara1;
-const num = chara1.selectedIndex;
-const str = chara1.options[num].value;
-document.getElementById("chara1id").textContent = str; 
-}
-function clickBtn4(){
-const floor1 = document.form3.floor1;
-const num = floor1.selectedIndex;
-const str = floor1.options[num].value;
-document.getElementById("floor1id").textContent = str; 
-}
-function clickBtn5(){
-const rating1 = document.form3.rating1;
-const num = rating1.selectedIndex;
-const str = rating1.options[num].value;
-document.getElementById("rating1id").textContent = str; 
-}
-function clickBtn6(){
-const floor2 = document.form4.floor2;
-const num = floor2.selectedIndex;
-const str = floor2.options[num].value;
-document.getElementById("floor2id").textContent = str; 
-}
-function clickBtn7(){
-const rating2 = document.form4.rating2;
-const num = rating2.selectedIndex;
-const str = rating2.options[num].value;
-document.getElementById("rating2id").textContent = str; 
-}
-function clickBtn11(){
-const ito = document.form6.ito;
-const num = ito.selectedIndex;
-const str = ito.options[num].value;
-document.getElementById("itoid").textContent = str; 
-}
-</script>
-<script>
+    </div>
+    <div class="tweet" id="tweet"> <button id="twitter-share-button"><i class="fab fa-twitter"></i>ツイートする</button>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="b"> <span class="b2" id="tweet-text"> 
+<p>
+▼プレマ募集ジェネレーター(@GGSTPlayerMatch)<br>
+【プラットフォーム】<span id="hardid"></span><br>
+【使用キャラ】<span id="chara1id"></span><br>
+【階層】<span id="floor1id" class="no-wrap"></span>【レート】<span id="rating1id" class="no-wrap"></span><br>
+【募集キャラ】<span id="chara2id"></span><br>【階層】<span id="floor2id" class="no-wrap"></span>【レート】<span id="rating2id" class="no-wrap"></span><br>
+【ルール】<span id="nansakiid" class="no-wrap"></span>【回数】<span id="nankaiid" class="no-wrap"></span><br>
+【ID】<span id="homeid"></span><br>
+【募集目的】<span id="itoid">
+</span><br> </div>
+    </p>
+    </span>
+    <script>
+      function clickBtn1() {
+      const arr = [];
+      const chara2 = document.getElementsByName("chara2");
+      for (let i = 0; i < chara2.length; i++) {
+      if (chara2[i].checked) 
+      {
+      arr.push(chara2[i].value);
+      }
+      }
+      document.getElementById("chara2id").textContent = arr;
+      }
+    </script>
+    <script>
+      function clickBtn2(){
+      const hard = document.form1.hard;
+      const num = hard.selectedIndex;
+      const str = hard.options[num].value;
+      document.getElementById("hardid").textContent = str; 
+      }
+      function clickBtn3(){
+      const chara1 = document.form2.chara1;
+      const num = chara1.selectedIndex;
+      const str = chara1.options[num].value;
+      document.getElementById("chara1id").textContent = str; 
+      }
+      function clickBtn4(){
+      const floor1 = document.form3.floor1;
+      const num = floor1.selectedIndex;
+      const str = floor1.options[num].value;
+      document.getElementById("floor1id").textContent = str; 
+      }
+      function clickBtn5(){
+      const rating1 = document.form3.rating1;
+      const num = rating1.selectedIndex;
+      const str = rating1.options[num].value;
+      document.getElementById("rating1id").textContent = str; 
+      }
+      function clickBtn6(){
+      const floor2 = document.form4.floor2;
+      const num = floor2.selectedIndex;
+      const str = floor2.options[num].value;
+      document.getElementById("floor2id").textContent = str; 
+      }
+      
+      function clickBtn7(){
+      const rating2 = document.form4.rating2;
+      const num = rating2.selectedIndex;
+      const str = rating2.options[num].value;
+      document.getElementById("rating2id").textContent = str; 
+      }
       function clickBtn8() {
-    let str = "";
-    const q1 = document.form5.q1;
-    for (let i = 0; i < q1.length; i++) {
+      let str = "";
+      const q1 = document.form5.q1;
+      for (let i = 0; i < q1.length; i++) {
       if (q1[i].checked) {
-        str = q1[i].value;
-        break;
+      str = q1[i].value;break;}}
+      document.getElementById("nansakiid").textContent = str;
       }
-    }
-    document.getElementById("nansakiid").textContent = str;
-  }
-</script>
-<script>
       function clickBtn9() {
-    let str = "";
-    const q2 = document.form5.q2;
-    for (let i = 0; i < q2.length; i++) {
-      if (q2[i].checked) {
-        str = q2[i].value;
-        break;
+      let str = "";
+      const q2 = document.form5.q2;
+      for (let i = 0; i < q2.length; i++) {
+      if (q2[i].checked) {str = q2[i].value;break;}}
+      document.getElementById("nankaiid").textContent = str;
       }
-    }
-    document.getElementById("nankaiid").textContent = str;
-  }
-</script>
-</body>
+      function clickBtn10() {
+      const t1 = document.getElementById("home").value;
+      document.getElementById("homeid").textContent = t1;
+      }
+      function clickBtn11(){
+      const ito = document.form6.ito;
+      const num = ito.selectedIndex;
+      const str = ito.options[num].value;
+      document.getElementById("itoid").textContent = str; 
+      }
+    </script>
+    <script>
+      document.getElementById("twitter-share-button").onclick = function() {
+          // 出力結果を取得
+          let text = document.getElementById("tweet-text").innerText;
+      
+          // オプションパラメータを設定
+          let hashtags = "GGSTプレマ募集";
+          let url = encodeURIComponent()  // location.hrefは今いるURL
+      
+          // URLを生成して遷移
+          window.open("https://twitter.com/share?text=" + text + "&hashtags=" + hashtags);
+      }
+    </script>
+  </body>
 </div>
 </html>
