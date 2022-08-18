@@ -50,7 +50,6 @@
 }
 .b2{
     text-align: left;
-    user-select: none;
 }
 .ito{
     text-align: center;
@@ -71,6 +70,16 @@
   font-size: 1PX;
   color: lightblue;
 }
+button {
+  border: none;
+  background: transparent;
+}
+.tweetgg{
+ width: 100px;
+}
+h1{
+  font-family: 'impact', serif;
+}
   </style>
 </head>
 <div class="j">
@@ -79,7 +88,7 @@
   </header>
   <body>
     <div class="a">
-      <form name="form1"> <label for="hard">ハード</label> <select name="hard" onchange="clickBtn2()">
+      <form name="form1"> <label for="hard">プラットフォーム</label> <select name="hard" onchange="clickBtn2()">
       <option disabled selected value="">select</option>
       <option value="PS">PS</option>
       <option value="Steam">Steam</option>
@@ -240,7 +249,7 @@
     <option value="サブキャラ練習">サブキャラ練習</option>
     </select></form>
     </div>
-    <div class="tweet" id="tweet"> <button id="twitter-share-button"><i class="fab fa-twitter"></i>ツイートする</button>
+    <div class="tweet" id="tweet"> <button id="twitter-share-button"><i class="fab fa-twitter"></i><img src="img/アセット 1.png" class="tweetgg"></button>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div class="b"> <span class="b2" id="tweet-text"> 
@@ -251,7 +260,7 @@
 【階層】<span id="floor1id" class="no-wrap"></span>【レート】<span id="rating1id" class="no-wrap"></span><span class="kaigyo">%0a</span><br>
 【募集キャラ】<span id="chara2id"></span><span class="kaigyo">%0a</span><br>
 【階層】<span id="floor2id" class="no-wrap"></span>【レート】<span id="rating2id" class="no-wrap"></span><span class="kaigyo">%0a</span><br>
-【ルール】<span id="nansakiid" class="no-wrap"></span>【回数】<span id="nankaiid" class="no-wrap"></span><span class="kaigyo">%0a</span><br>
+【ルール】<span id="nansakiid" class="no-wrap"></span>/<span id="nankaiid" class="no-wrap"></span><span class="kaigyo">%0a</span><br>
 【ID】<span id="homeid"></span><span class="kaigyo">%0a</span><br>
 【募集目的】<span id="itoid"></span><span class="kaigyo">%0a</span><br>
     </div>
