@@ -344,8 +344,8 @@ button {
 document.getElementById("twitter-share-button").onclick = function() {
           let text = document.getElementById("tweet-text").innerText;
           let hashtags = "GGSTプレマ募集";
-          let url = "";
-          window.open("https://twitter.com/share?text=" + text + "&hashtags=" + hashtags ₊ url);}
+          let url = encodeURIComponent() ;
+          window.open("https://twitter.com/share?text=" + text + "&hashtags=" + hashtags ₊ "&url=" + url);}
     </script>
   </body>
 </div>
